@@ -1,0 +1,19 @@
+{
+    "name": "seneview/gcrawler-pub",
+    "description": "Google Keyword results scraping tool upto 50 individual results.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Seneview\\Gcrawler\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "ext-dom": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
