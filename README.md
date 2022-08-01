@@ -11,5 +11,14 @@ $client = new SearchEngine();
 $client->setEngine('google.com');
 
 # returns ResultObject Array
-$results = client->search(['keyword1', 'keyword2']);
+$results = $client->search(['keyword1', 'keyword2']);
+
+# Show results from the first page
+$results->first_page();
+
+# Show results from 4th page
+$results->page(4)
+
+# Get total number of results crawled
+$results->count();
 ```
